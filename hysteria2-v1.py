@@ -343,8 +343,8 @@ def create_config(base_dir, port, password, cert_path, key_path, domain):
             }
         },
         "bandwidth": {
-            "up": "100 mbps",
-            "down": "100 mbps"
+            "up": "30 mbps",
+            "down": "80 mbps"
         },
         "ignoreClientBandwidth": False,
         "log": {
