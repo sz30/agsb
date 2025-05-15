@@ -601,7 +601,7 @@ def main():
     elif args.command == 'install':
         # 默认配置
         port = args.port if args.port else 49999
-        password = args.password if args.password else "123qwe!@#QWE"
+        password = args.password if args.password else "Rs6540123@"
         
         # 获取IP地址
         server_address = args.ip if args.ip else get_ip_address()
@@ -642,7 +642,7 @@ def main():
         service_started = start_service(start_script, port, base_dir)
         
         # 生成客户端配置链接
-        config_link = f"hysteria2://{urllib.parse.quote(password)}@{server_address}:{port}?insecure=1&sni={server_address}&bandwidth=100mbps"
+        config_link = f"hysteria2://{urllib.parse.quote(password)}@{server_address}:{port}?insecure=1&sni={server_address}&bandwidth=80mbps"
         
         print(f"""
 Hysteria2 已成功安装！
@@ -675,7 +675,7 @@ Hysteria2 已成功安装！
 TLS: 启用
 跳过证书验证: 是
 SNI: {server_address}
-带宽: 100mbps
+带宽: 80mbps
 
 支持的系统:
 - Linux (x86_64, arm64)
