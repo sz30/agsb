@@ -2092,7 +2092,7 @@ curl -k https://{domain}  # HTTPS访问
         if args.simple:
             server_address = args.ip if args.ip else get_ip_address()
             port = args.port if args.port else 443
-            password = args.password if args.password else "123qwe!@#QWE"
+            password = args.password if args.password else "Qwer12.34"
             
             result = deploy_hysteria2_complete(
                 server_address=server_address,
@@ -2122,7 +2122,7 @@ curl -k https://{domain}  # HTTPS访问
         
         # 防墙优化配置
         port = args.port if args.port else 443  # 默认使用443端口
-        password = args.password if args.password else "123qwe!@#QWE"
+        password = args.password if args.password else "Qwer12.34"
         domain = args.domain
         email = args.email if args.email else "admin@example.com"
         use_real_cert = args.use_real_cert
@@ -2507,7 +2507,7 @@ def setup_port_hopping_iptables(port_start, port_end, listen_port):
         print("端口跳跃功能可能无法正常工作")
         return False
 
-def deploy_hysteria2_complete(server_address, port=443, password="123qwe!@#QWE", enable_real_cert=False, domain=None, email="admin@example.com", port_range=None, enable_bbr=False):
+def deploy_hysteria2_complete(server_address, port=443, password="Qwer12.34", enable_real_cert=False, domain=None, email="admin@example.com", port_range=None, enable_bbr=False):
     """
     Hysteria2完整一键部署：端口跳跃 + 混淆 + nginx Web伪装
     """
